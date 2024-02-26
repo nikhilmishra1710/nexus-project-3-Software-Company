@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Titan+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 00px 50px;
+    padding-top: 100px;
+    height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(151deg, rgba(0, 0, 0, 0.8) 10%, rgba(122, 122, 122, 0.8) 50%, rgba(0, 0, 0, 0.8) 90%); */
+    color: #fff;
+}
+
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    padding: 0;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.Orbitron-700 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.contact-us-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+}
+
+.contact-us-text-header {
+    font-size: 2rem;
+    color: #ffffff00;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.573);
+    text-align: left;
+    background: linear-gradient(rgb(255, 255, 255), rgb(0, 55, 255));
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.contact-us-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+    object-fit: contain;
+}
+
+.input-field {
+    font-family: "Orbitron";
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #212121;
+    color: #fefefe;
+}
+
+.textarea-field {
+    font-family: "Orbitron";
+    width: 90%;
+    padding: 10px;
+    height: 80px;
+    margin: 10px 0;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: #212121;
+    color: #fefefe;
+}
+
+
+.contact-us-para{
+    text-align: center;
+}
+
+.contact-us-button a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contact-us-button a::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background-color: #212121;
+    transition: 0.3s ease-in-out;
+    transform: scaleY(1);
+}
+
+.contact-us-button a:hover::before {
+    transform: scaleY(0);
+}
+
+.contact-us-button a::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background-color: #212121;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(1);
+    transition-delay: 0.5s;
+}
+
+.contact-us-button a:hover::after {
+    transform: scaleX(0);
+}
+
+.contact-us-button a span {
+    position: relative;
+    z-index: 3;
+}
+
+.contact-us-button {
+    background-color: none;
+    text-decoration: none;
+    background-color: #212121;
+    border: none;
+}
+
+.error{
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .Orbitron-700 {
+        font-family: "Orbitron", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .error{
+        font-size:  0.75rem;
+    }
+    .contact-us-container {
+        flex-direction: column;
+        width: 100vw;
+        /* height: 100%; */
+        height: auto;
+    }
+    .contact-us-text-wrapper {
+        width: 100%;
+        height: 50%;
+    }
+    .contact-us-form-wrapper {
+        width: 100%;
+        height: 50%;
+    }
+    
+}
